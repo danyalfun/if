@@ -233,6 +233,23 @@ namespace ConsoleApp1
             }
             Console.WriteLine("you need to pay: " + prie);
         }
+        static void Task8()
+        {
+    int num;
+    Console.WriteLine("enter a number");
+    num = int.Parse(Console.ReadLine());
+    if (num % 2 == 0)
+    {
+        if (num % 4 == 0)
+            Console.WriteLine("number devedes by 4");
+        else
+            Console.WriteLine("number not devedes by 4 and zogi");
+    }
+    else
+    {
+        Console.WriteLine("number is i zogi");
+    }
+}
       
 
 
@@ -248,3 +265,4 @@ namespace ConsoleApp1
         }
     }
 }
+

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -27,7 +27,7 @@ namespace ConsoleApp1
                 Console.WriteLine("num is shlili");
             else
                 Console.WriteLine("num is efes");
-                
+
         }
         static void Task2()
         {
@@ -47,14 +47,14 @@ namespace ConsoleApp1
             }
             else
             {
-                if (usage <= 300 )
+                if (usage <= 300)
                     price = 0.5 * 1.05;
                 else if (usage > 301 && usage < 600)
                     price = 0.7 * 1.05;
                 else
                     price = 1 * 1.05;
             }
-            
+
             Console.WriteLine("The price is " + price);
 
         }
@@ -82,12 +82,12 @@ namespace ConsoleApp1
             else
             {
                 if (city == true)
-                    price = 6 ;
+                    price = 6;
                 else
-                    price = 12 ;
+                    price = 12;
             }
         }
-        static void Task4() 
+        static void Task4()
         {
             int age;
             Console.WriteLine("enter your age");
@@ -101,7 +101,7 @@ namespace ConsoleApp1
                 prie = 120;
                 if (student == true)
                     prie *= 0.8;
-                
+
             }
             else if (age < 60 && age > 19)
             {
@@ -123,7 +123,7 @@ namespace ConsoleApp1
                     prie -= prie * 0.15;
 
             }
-            Console.WriteLine("you need to pay: " +  prie);    
+            Console.WriteLine("you need to pay: " + prie);
         }
         static void Task5()
         {
@@ -194,7 +194,7 @@ namespace ConsoleApp1
             }
             Console.WriteLine("you need to pay: " + prie);
         }
-       
+
         static void Task7()
         {
             int age;
@@ -235,23 +235,115 @@ namespace ConsoleApp1
         }
         static void Task8()
         {
-    int num;
-    Console.WriteLine("enter a number");
-    num = int.Parse(Console.ReadLine());
-    if (num % 2 == 0)
-    {
-        if (num % 4 == 0)
-            Console.WriteLine("number devedes by 4");
-        else
-            Console.WriteLine("number not devedes by 4 and zogi");
-    }
-    else
-    {
-        Console.WriteLine("number is i zogi");
-    }
-}
-      
+            int num;
+            Console.WriteLine("enter a number");
+            num = int.Parse(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                if (num % 4 == 0)
+                    Console.WriteLine("number devedes by 4");
+                else
+                    Console.WriteLine("number not devedes by 4 and zogi");
+            }
+            else
+            {
+                Console.WriteLine("number is i zogi");
+            }
+        }
+        static void Task9()
+        {
+            string username;
+            int password;
+            Console.WriteLine("enter username");
+            username = Console.ReadLine();
+            Console.WriteLine("enter password");
+            password = int.Parse(Console.ReadLine());
+            if (username == "admin")
+            {
+                if (password == 1234)
+                {
+                    Console.WriteLine("welcome admin");
+                }
+                else
+                {
+                    Console.WriteLine("error in password ");
+                }
 
+            }
+            else
+            {
+                Console.WriteLine("error in username");
+            }
+        }
+        static void Task10()
+        {
+            double temperature;
+            Console.WriteLine("enter temperature");
+            temperature = double.Parse(Console.ReadLine());
+            if (temperature < 0)
+            {
+                Console.WriteLine("fruse");
+            }
+            else if (temperature >= 0 && temperature < 100)
+            {
+                Console.WriteLine("liquid");
+            }
+            else
+            {
+                Console.WriteLine("gas");
+            }
+
+        }
+        static void Task11()
+        {
+            char x = 'f';
+            Console.WriteLine("enter a char");
+            x = char.Parse(Console.ReadLine());
+            if ((x == 'a') || (x == 'e') || (x == 'i') || (x == 'o') || (x == 'u') ||
+                (x == 'A') || (x == 'E') || (x == 'I') || (x == 'O') || (x == 'U'))
+            {
+ 
+                
+                if (x >= 65 && x <= 90)
+                {
+                    Console.WriteLine("big vowel");
+                }
+                else if (x >= 97 && x <= 122)
+                {
+                    Console.WriteLine("litile vowel");
+                }
+            }
+            else
+            {
+                Console.WriteLine("consonant");
+            }
+        }
+        static void Task13() 
+        {
+            int hour;
+            Console.WriteLine("enter hour");
+            hour = int.Parse(Console.ReadLine());
+            if (hour >= 0 && hour < 6)
+            {
+                Console.WriteLine("night");
+            }
+            else if (hour >= 6 && hour < 12)
+            {
+                Console.WriteLine("morning");
+            }
+            else if (hour >= 12 && hour < 18)
+            {
+                Console.WriteLine("afternoon");
+            }
+            else if (hour >= 18 && hour < 24)
+            {
+                Console.WriteLine("evening");
+            }
+            else
+            {
+                Console.WriteLine("invalid hour");
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -262,7 +354,11 @@ namespace ConsoleApp1
             //Task5();
             //Task6();
             //Task7();
+            //Task8();
+            //Task9();
+            //Task10();
+            //Task11();
+            //Task13();
         }
     }
 }
-
